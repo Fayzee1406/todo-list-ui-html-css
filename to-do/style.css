@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f4f4f4;
+}
+.todo-app {
+    position: relative;
+    top: 100px;
+    max-width: 600px;
+    margin: 0 auto;
+    height: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.todo-app h1{
+    margin-top: 20px;
+
+    text-align: center;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+.todo-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 40px auto;
+    flex-wrap: wrap;
+}
+
+.todo-input{
+    width: 400px;
+    display: flex;
+    padding: 10px;
+     border: 1px solid #ccc;
+    border-right: none;
+    outline: none;
+}
+.todo-button{
+    cursor: pointer;
+    display: flex;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.filter-btn{
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #0077b6;
+    color: white;
+    cursor: pointer;
+}
+.todo-button:hover{
+    background-color: #e0e0e0;
+}
+
+.todo-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+
+.todo-input,
+.todo-button,
+.filter-btn {
+    height: 40px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+     flex-shrink: 0; 
+}
+.todo-item {
+    background-color: #fff;
+    padding: 12px 16px;
+    border-radius: 6px;
+    width: 80%;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.checkbox-input {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+.todo-text {
+    flex: 1;
+    text-align: left;
+}
+
+.todo-tahrir, .todo-delete {
+    background-color: transparent;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    padding: 4px 8px;
+    transition: 0.2s;
+}
+
+.todo-delete:hover {
+    color: #e74c3c;
+}
+.todo-tahrir:hover {
+    color: #3498db;
+}
+
+
+/* responsive */
+
+@media (max-width: 768px){
+    .todo-input{
+        width: 150px;
+    }
+    .todo-button{
+        width: 34px;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .filter-btn{
+        width: 34px;
+        margin: 0;
+        padding: 0;
+    }
+}
